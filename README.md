@@ -37,5 +37,3 @@ To fix these issues, a Python automation script (`data_cleaning.py`) using **Pan
 * **Removed Records:** 149,217 (Missing IDs, Duplicates, and Cancellations/Adjustments)
 
 ---
-
-## 📂 Repository File Structure
