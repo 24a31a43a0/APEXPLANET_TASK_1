@@ -1,0 +1,13 @@
+Field Name,Data Type,Description,Business Relevance
+InvoiceNo,String / Categorical,6-digit integral number uniquely assigned to each transaction. Starts with C for cancellations.,Uniquely identifies orders and tracks cancellations/returns.
+StockCode,String / Categorical,5-digit integral number uniquely assigned to each distinct product.,Essential for inventory management and tracking product sales performance.
+Description,String / Text,Product or item name.,Used for product analytics and popular item classification.
+Quantity,Integer,The quantities of each product per transaction.,Measures sales volume demand patterns and basket size.
+InvoiceDate,Datetime,The day and time when each transaction was generated.,Crucial for peak sales analysis seasonality and time-based sales trends.
+UnitPrice,Float / Numeric,Product price per unit in sterling (£).,Used for revenue calculations and evaluating pricing strategy impact.
+CustomerID,String / Categorical,5-digit integral number uniquely assigned to each customer.,Key for customer segmentation lifetime value (CLV) and RFM analysis.
+Country,String / Categorical,Name of the country where each customer resides.,Helps in geographical market analysis and targeted regional marketing.
+TotalAmount,Float / Numeric,Calculated field: Quantity * UnitPrice representing total spending per line item.,Directly reflects gross revenue generated per item purchase.
+InvoiceYearMonth,String / Period,Extracted year and month of the transaction (YYYY-MM).,Facilitates monthly revenue trend tracking and cohort analysis.
+DayOfWeek,String / Categorical,Day of the week when the transaction took place.,Identifies peak purchasing days during the week.
+Hour,Integer,Hour of the day (0-23) when the transaction occurred.,Determines peak shopping hours for optimizing system load and promotions.
